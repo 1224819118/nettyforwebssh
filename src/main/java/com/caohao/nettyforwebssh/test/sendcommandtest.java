@@ -9,8 +9,8 @@ import java.io.OutputStream;
 public class sendcommandtest {
     public static void main(String[] args) throws JSchException {
         JSch jSch = new JSch();
-        Session root = jSch.getSession("root", "47.95.7.231", 22);
-        root.setPassword("CaoHao_(1224819118)");
+        Session root = jSch.getSession("root", "*", 22);
+        root.setPassword("*");
         root.setConfig("StrictHostKeyChecking", "no");
         root.connect(30000);
         Channel channel = root.openChannel("shell");
