@@ -9,8 +9,8 @@ public class test {
     public static void main(String[] args) {
         try{
             JSch jsch=new JSch();
-            Session session = jsch.getSession("root","47.95.7.231",22);
-            session.setPassword("CaoHao_(1224819118)");
+            Session session = jsch.getSession("root","*",22);
+            session.setPassword("*");
 
             UserInfo userInfo = new UserInfo() {
                 @Override
